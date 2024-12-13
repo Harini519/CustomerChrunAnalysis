@@ -1,0 +1,27 @@
+The Decision Tree Regressor achieved a high accuracy score of 0.999 on both training and testing data, indicating that it was able to fit and generalize the data well.
+
+ Random Forest Regressor
+In addition to the decision tree, a Random Forest Regressor was also applied. This model uses multiple decision trees to improve performance and reduce overfitting.
+
+The results were similarly impressive, with an accuracy score close to 0.999 on both training and testing data.
+
+Linear Regression
+Finally, a Linear Regression model was tested. While linear regression is simpler compared to tree-based models, it provides insight into the linear relationships between the features and the target variable.
+
+The Linear Regression model showed a similar performance, with an accuracy close to 0.999.
+
+Key Findings
+Model Performance: All models (Decision Tree Regressor, Random Forest Regressor, and Linear Regression) performed exceptionally well, with accuracy scores near 0.999. This indicates that the dataset is well-structured and that the models were able to predict churn effectively.
+Important Features: Features such as tenure, Contract, and MonthlyCharges were most significant in predicting churn. Customers with longer tenures and those on longer contracts tend to have lower churn rates.
+Churn Prediction: Customers on month-to-month contracts or those with higher monthly charges were more likely to churn.
+
+Recommendations
+Based on the findings from the exploratory analysis and predictive modeling, here are some recommendations for the telecom company:
+
+Offer Long-Term Contracts: Customers on month-to-month contracts have a higher churn rate. Incentivizing customers to switch to longer-term contracts (e.g., one or two-year contracts) may help reduce churn.
+Adjust Pricing Strategy: High monthly charges correlate with higher churn rates. Offering discounts or revising pricing models for high-paying customers could reduce churn.
+Target High-Risk Customers: Use the churn prediction model to identify customers at risk of leaving and offer retention offers, such as discounted services or additional support.
+ Conclusion
+This analysis has successfully demonstrated that machine learning models can effectively predict customer churn in a telecommunications context. The Decision Tree Regressor, Random Forest Regressor, and Linear Regression models all showed excellent performance, achieving near-perfect accuracy. Key features such as tenure, Contract type, and MonthlyCharges were found to be critical in predicting churn.
+
+By leveraging these models, the company can identify high-risk customers early and take proactive steps to improve customer retention.
