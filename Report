@@ -1,0 +1,35 @@
+OUTPUT 
+
+
+Customer Churn Analysis Report
+1. Introduction
+This report investigates customer churn in a telecommunications company, aiming to understand the factors that influence customer churn and predict the likelihood of churn based on customer attributes. The dataset includes various customer features such as demographics, services subscribed to, and financial details. Using machine learning techniques, we developed predictive models to assess churn and gain insights into what factors most influence customer behavior.
+
+2. Dataset Overview
+The dataset consists of 7,043 customer records with the following key features:
+
+Customer demographics: gender, senior citizen status, whether they have a partner or dependents.
+Services: tenure (months with the company), phone service, internet service, security, backup, tech support, and streaming services.
+Financial details: monthly charges, total charges, and payment methods.
+Churn status: whether the customer churned (Yes/No).
+The goal of this analysis is to build predictive models to forecast customer churn and identify which features are most significant in determining whether a customer will churn.
+
+3. Data Preprocessing
+Before analysis, the data was processed as follows:
+
+Missing Values: No missing values were identified, ensuring the dataset is complete.
+Data Types: Categorical variables like gender, SeniorCitizen, and Churn were identified for encoding, while numerical columns like tenure, MonthlyCharges, and TotalCharges were preserved for analysis.
+Duplicates: No significant duplicates were found in the dataset.
+Encoding Categorical Variables: Categorical variables were encoded as binary (1/0) or categorical labels (e.g., Contract types: Month-to-month, One year, Two year).
+4. Exploratory Data Analysis (EDA)
+Various trends and relationships were explored through visualizations and statistical summaries:
+
+Churn Distribution: The churn distribution was explored to understand the imbalance between churned and non-churned customers.
+Feature Relationships: Key features such as tenure, Contract, MonthlyCharges, and TotalCharges were analyzed with respect to churn.
+Service Subscriptions: The relationship between service subscriptions (e.g., InternetService, OnlineSecurity) and churn was examined to understand how these factors impact churn behavior.
+Correlation Analysis: The correlation between numerical features (e.g., tenure, MonthlyCharges, TotalCharges) was computed, revealing strong correlations between MonthlyCharges and TotalCharges.
+5. Model Building and Evaluation
+To predict customer churn, we employed several regression-based models and evaluated their performance.
+
+5.1 Decision Tree Regressor
+A Decision Tree Regressor was applied to predict customer churn. The dataset was split into training and testing sets with an 80-20 split.
